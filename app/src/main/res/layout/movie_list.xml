@@ -16,8 +16,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:outlineAmbientShadowColor="@color/ExtraSoftBg">
+            android:layout_height="match_parent">
+<!--            android:outlineAmbientShadowColor="@color/ExtraSoftBg">-->
 
             <ImageView
                 android:id="@+id/poster_path"
@@ -26,7 +26,8 @@
                 android:padding="10dp"
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/avatar"/>
+                android:src="@drawable/avatar"
+                android:contentDescription="@string/default_img" />
             <LinearLayout
                 android:id="@+id/movie_desc"
                 android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
                     android:textColor="@color/text"
                     android:padding="2dp"
                     android:layout_margin="1dp"
-                    android:textScaleX="1px"
+                    android:textScaleX="1"
                     android:fontFamily="@font/opensans"/>
 
                 <TextView
@@ -59,7 +60,7 @@
                     android:textSize="12sp"
                     android:layout_margin="1dp"
                     android:padding="2dp"
-                    android:textScaleX="1px" />
+                    android:textScaleX="1" />
 
             </LinearLayout>
 
